@@ -4,8 +4,8 @@ import random
 import os
 from textblob import TextBlob
 
-# api = os.getenv("MAKERSUITE_API_TOKEN") 
-api = "AIzaSyAF_pGbsDW3ccFzWoj4zE1ksnbUIZf0W6w"
+api = os.getenv("MAKERSUITE_API_TOKEN") 
+# api = "AIzaSyAF_pGbsDW3ccFzWoj4zE1ksnbUIZf0W6w"
 genai.configure(api_key=api)
 model = genai.GenerativeModel("gemini-1.5-flash")
 
