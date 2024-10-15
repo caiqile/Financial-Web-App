@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Financial Q&A</title>
+    <title>Responsive Form</title>
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
 </head>
 <body>
     <div class="container">
-        <h2>Welcome to Q&A</h2>
-        <form action="/makersuite" method="post">
-            <input type="text" name="q" placeholder="Enter your question...">
-            <input type="submit" value="Enter">
-        </form>
+        <h2>Sentiment Result</h2>
+        <h4>{{r}}</h4>
         <form action="/" method="post">
             <input type="submit" value="Back to Main">
         </form>
     </div>
 </body>
 </html>
+
+
